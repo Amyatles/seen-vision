@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seen Vision</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                inicio<img src="../img/logo-seenvision.png" alt="Seen Vision">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.html">Ópticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.html">Gafas de Sol</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.html">Promociones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <form class="d-flex">
+                        <input class="form-control form-control-sm" type="search" placeholder="Buscar"
+                            aria-label="Buscar">
+                    </form>
+
+                    <a class="nav-link d-flex align-items-center gap-1" href="#">
+                        <i class="bi bi-person-fill"></i>
+                        <span>Login/registrar</span>
+                    </a>
+
+                    <a class="nav-link" href="./checkout.html">
+                        <i class="bi bi-cart-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Producto -->
+
+    <section class="container my-5">
+        <div class="row g-5">
+            <div class="col-md-7">
+                <div class="main-product-img-wrapper mb-3">
+                    <img src="../img/lentes.jpg" class="img-fluid rounded-4 main-gallery-img" alt="Modelo CX2535">
+                </div>
+                <div class="row g-2 product-thumbnails">
+                    <div class="col-3">
+                        <img src="../img/lente1.jpg" class="img-fluid rounded-3 active" alt="Vista 1">
+                    </div>
+                    <div class="col-3">
+                        <img src="../img/lente2.jpg" class="img-fluid rounded-3" alt="Vista 2">
+                    </div>
+                    <div class="col-3">
+                        <img src="../img/lente1.jpg" class="img-fluid rounded-3" alt="Vista 3">
+                    </div>
+                    <div class="col-3">
+                        <img src="../img/lente2.jpg" class="img-fluid rounded-3" alt="Vista 4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 d-flex flex-column justify-content-center">
+                <h1 class="product-detail-title fw-bold mb-2">Modelo CX2535</h1>
+                <div class="product-detail-price fs-2 fw-bold mb-4">$29.990</div>
+
+                <div class="mb-4">
+                    <span class="d-block mb-2 fw-semibold text-muted">
+                        Selecciona color
+                    </span>
+
+                    <div class="d-flex gap-2">
+
+                        <input type="radio" class="btn-check" name="color" id="morado" autocomplete="off">
+                        <label class="color-circle" for="morado" style="background-color: #E056FD;"></label>
+
+                        <input type="radio" class="btn-check" name="color" id="negro" autocomplete="off">
+                        <label class="color-circle" for="negro" style="background-color: #000000;"></label>
+
+                        <input type="radio" class="btn-check" name="color" id="amarillo" autocomplete="off">
+                        <label class="color-circle" for="amarillo" style="background-color: #FFC312;"></label>
+
+                        <input type="radio" class="btn-check" name="color" id="verde" autocomplete="off">
+                        <label class="color-circle" for="verde" style="background-color: #74CCB9;"></label>
+
+                        <input type="radio" class="btn-check" name="color" id="cafe" autocomplete="off">
+                        <label class="color-circle" for="cafe" style="background-color: #8B5A2B;"></label>
+
+                    </div>
+                </div>
+
+                <ul class="list-unstyled product-features-list mb-5 text-secondary">
+                    <li class="mb-2">Incluye lente antirrayas</li>
+                    <li class="mb-2">Incluye caja y paño terciopelo</li>
+                    <li class="mb-2">Cambio y devoluciones hasta 30 días</li>
+                    <li class="mb-2">Garantía por un año</li>
+                </ul>
+
+                <div class="d-flex gap-3">
+                    <button class="btn btn-action w-50" onclick="window.location.href='checkout.html'">
+                        Comprar sin receta
+                    </button>
+
+                    <button class="btn btn-action w-50" onclick="window.location.href='checkout.html'">
+                        Comprar con receta
+                    </button>
+                </div>
+    </section>
+
+
+    <!--Ficha del producto-->
+
+    <section class="container my-5">
+        <h2 class="lookbook-title mb-4">Ficha del producto</h2>
+
+
+        <div class="product-spec-banner rounded-0 d-flex align-items-center">
+            <div class="spec-clean-text col-md-9 col-lg-8 ps-4 ps-md-5">
+                <p class="mb-3">Cristales de alta calidad diseñados para ofrecer una visión nítida y cómoda durante todo
+                    el día, con tratamiento antirreflejo que reduce los reflejos y mejora la experiencia visual.</p>
+                <p class="mb-0">Fabricados con materiales resistentes y livianos, brindan mayor durabilidad, protección
+                    contra rayos UV y una excelente adaptación para el uso diario en interiores y exteriores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 shadow-sm p-4 rounded-4 bg-white">
+        <div class="row g-5 align-items-center mb-4">
+            <div class="col-md-6">
+                <div class="zoom-img-container">
+                    <img src="../img/lentes.jpg" class="img-fluid" alt="Detalle aumentado del lente">
+                </div>
+            </div>
+            <div class="col-md-6 product-desc-side-text">
+                <p class="mb-4 text-secondary lh-lg">Marco elaborado con materiales ligeros y resistentes que ofrecen
+                    comodidad y durabilidad para el uso diario, combinando un diseño moderno con un ajuste seguro y
+                    ergonómico.</p>
+                <p class="text-secondary lh-lg">Su estructura cuidadosamente diseñada proporciona estabilidad y estilo,
+                    adaptándose a diferentes tipos de rostro sin comprometer la comodidad ni la estética del producto.
+                </p>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-11 text-center product-desc-bottom-text">
+                <p class="mb-4 text-secondary lh-lg">Diseñado para ofrecer un ajuste cómodo y seguro, este modelo
+                    combina líneas modernas con detalles cuidadosamente elaborados que aportan elegancia y versatilidad
+                    para cualquier ocasión.</p>
+                <p class="text-secondary lh-lg">Su diseño atemporal permite complementar distintos estilos personales,
+                    convirtiéndolo en una opción ideal tanto para el uso diario como para situaciones profesionales y
+                    sociales.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lookbock -->
+    <section class="container my-5">
+        <h2 class="lookbook-title mb-4">Lookbook</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+
+            <div class="col">
+                <div class="lookbook-img-wrapper">
+                    <img src="../img/persona1.jpg" class="img-fluid lookbook-img" alt="Lookbook 1">
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="lookbook-img-wrapper">
+                    <img src="../img/persona2.jpg" class="img-fluid lookbook-img" alt="Lookbook 2">
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="lookbook-img-wrapper">
+                    <img src="../img/persona3.jpg" class="img-fluid lookbook-img" alt="Lookbook 3">
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="lookbook-img-wrapper">
+                    <img src="../img/persona4.jpg" class="img-fluid lookbook-img" alt="Lookbook 4">
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="lookbook-img-wrapper">
+                    <img src="../img/persona5.jpg" class="img-fluid lookbook-img" alt="Lookbook 5">
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="lookbook-img-wrapper">
+                    <img src="../img/persona6.jpg" class="img-fluid lookbook-img" alt="Lookbook 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="container my-5">
+        <h2 class="reviews-list-title mb-4">Reseñas</h2>
+
+        <div class="reviews-list-container">
+
+
+            <div class="review-list-item">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="review-avatar-gray me-3"></div>
+                    <span class="review-user-name fw-medium">Loren Ipsum</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-start review-content-row">
+                    <p class="review-list-text text-secondary mb-0">Lorem ipsum purus sit sed pellentesque enim maecenas
+                        felis egestas vulputate venenatis consequat sapien habitant nibh at.</p>
+                    <div class="review-black-stars text-nowrap">★★★★</div>
+                </div>
+            </div>
+
+            <div class="review-list-item">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="review-avatar-gray me-3"></div>
+                    <span class="review-user-name fw-medium">Loren Ipsum</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-start review-content-row">
+                    <p class="review-list-text text-secondary mb-0">Lorem ipsum purus sit sed pellentesque enim maecenas
+                        felis egestas vulputate venenatis consequat sapien habitant nibh at.</p>
+                    <div class="review-black-stars text-nowrap">★★★★</div>
+                </div>
+            </div>
+
+
+            <div class="review-list-item">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="review-avatar-gray me-3"></div>
+                    <span class="review-user-name fw-medium">Loren Ipsum</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-start review-content-row">
+                    <p class="review-list-text text-secondary mb-0">Lorem ipsum purus sit sed pellentesque enim maecenas
+                        felis egestas vulputate venenatis consequat sapien habitant nibh at.</p>
+                    <div class="review-black-stars text-nowrap">★★★★</div>
+                </div>
+            </div>
+
+            <div class="review-list-item">
+                <div class="d-flex align-items-center mb-2">
+                    <div class="review-avatar-gray me-3"></div>
+                    <span class="review-user-name fw-medium">Loren Ipsum</span>
+                </div>
+                <div class="d-flex justify-content-between align-items-start review-content-row">
+                    <p class="review-list-text text-secondary mb-0">Lorem ipsum purus sit sed pellentesque enim maecenas
+                        felis egestas vulputate venenatis consequat sapien habitant nibh at.</p>
+                    <div class="review-black-stars text-nowrap">★★★★</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- CONTACTO -->
+
+                <div class="col-md-4">
+
+                    <h4>Contacto</h4>
+
+                    <p>Av. Providencia 1250, Santiago, Chile</p>
+
+                    <p>+56 2 2345 6789</p>
+
+                    <p>contacto@seenvision.cl</p>
+
+                    <br>
+
+                    <h4>Horario de Atención</h4>
+
+                    <p>Lun - Vie: 09:00 a 19:00</p>
+
+                    <p>Sáb: 10:00 a 14:00</p>
+
+                    <p>Domingo: Cerrado</p>
+
+                    <br>
+
+                    <h4>¿ Necesitas Ayuda ?</h4>
+
+                    <p>Preguntas Frecuentes</p>
+
+                </div>
+
+                <!-- NEWSLETTER -->
+
+                <div class="col-md-4 text-center">
+
+                    <h4>Newsletter</h4>
+
+                    <div class="newsletter-container">
+
+                        <label>E-Mail</label>
+
+                        <input type="email" class="form-control">
+
+                        <button class="btn btn-primary-custom">
+                            Aceptar
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- REDES -->
+
+                <div class="col-md-4">
+
+                    <h4>
+                        Síguenos en nuestras redes sociales
+                    </h4>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <img src="../img/facebook.png" alt="">
+                            <span>SeenVision</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/ig.png" alt="">
+                            <span>@SeenVision</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/tiktok.png" alt="">
+                            <span>@SeenVision</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

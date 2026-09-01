@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seen Vision</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/logo-seenvision.png" alt="Seen Vision">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.php">Ópticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.php">Gafas de Sol</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.php">Promociones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+
+                    <form class="d-flex">
+                        <input class="form-control form-control-sm" type="search" placeholder="Buscar"
+                            aria-label="Buscar">
+                    </form>
+
+                    <a class="nav-link d-flex align-items-center gap-1" href="#">
+                        <i class="bi bi-person-fill"></i>
+                        <span>Login/registrar</span>
+                    </a>
+
+                    <a class="nav-link" href="./checkout.html">
+                        <i class="bi bi-cart-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--CHECKOUT-->
+    <main class="container my-5 text-dark">
+        <div class="row g-5">
+
+            <section class="col-lg-7">
+                <!-- Contacto -->
+                <h2 class="fw-bold mb-3 fs-3">Contacto</h2>
+                <div class="mb-3">
+                    <input type="email" id="emailCheckout" class="form-control checkout-dark-input"
+                        placeholder="E-mail">
+                </div>
+
+                <!-- tipo de entrega -->
+                <div class="delivery-toggle-box p-3 mb-4">
+                    <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                        <div>
+                            <input class="form-check-input me-2" type="radio" name="deliveryType" id="deliveryEnvio"
+                                checked>
+                            <label class="form-check-label fw-medium" for="deliveryEnvio">Envío</label>
+                        </div>
+                        <i class="bi bi-truck fs-5"></i>
+                    </div>
+                    <div class="form-check d-flex align-items-center justify-content-between mb-0">
+                        <div>
+                            <input class="form-check-input me-2" type="radio" name="deliveryType" id="deliveryRetiro">
+                            <label class="form-check-label fw-medium" for="deliveryRetiro">Retiro</label>
+                        </div>
+                        <i class="bi bi-shop fs-5"></i>
+                    </div>
+                </div>
+
+                <!-- Datos de dirección -->
+                <div class="mb-3">
+                    <label class="fw-bold mb-2">País</label>
+                    <select class="form-select checkout-dark-input">
+                        <option selected>País</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label class="fw-bold mb-2">Nombre</label>
+                        <input type="text" id="nombreCheckout" class="form-control checkout-dark-input"
+                            placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fw-bold mb-2">Apellido</label>
+                        <input type="text" id="apellidoCheckout" class="form-control checkout-dark-input"
+                            placeholder="Apellido">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-bold mb-2">Dirección</label>
+
+                    <input type="text" id="direccionCheckout" class="form-control checkout-dark-input mb-2"
+                        placeholder="Dirección">
+
+                    <input type="text" class="form-control checkout-dark-input" placeholder="Casa, apartamento, etc.">
+                </div>
+
+
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label class="fw-bold mb-2">ZIP</label>
+                        <input type="text" class="form-control checkout-dark-input" placeholder="Código Postal">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="fw-bold mb-2">Comuna</label>
+                        <input type="text" class="form-control checkout-dark-input" placeholder="Comuna">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="fw-bold mb-2">Región</label>
+                    <select class="form-select checkout-dark-input">
+                        <option selected>Región</option>
+                        <option value="RM">Región Metropolitana</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="fw-bold mb-2">Teléfono</label>
+                    <input type="tel" id="telefonoCheckout" class="form-control checkout-dark-input" placeholder="+569">
+                </div>
+
+                <!-- Métodos de envío -->
+                <h2 class="fw-bold mb-3 fs-4">Métodos de envío</h2>
+                <div class="shipping-methods-box p-3">
+                    <div class="form-check p-3 mb-2 shipping-option">
+                        <input class="form-check-input" type="radio" name="shippingMethod" id="ship1">
+                        <label class="form-check-label text-muted small" for="ship1">
+                            Lorem ipsum netus posuere nulla gravida sem sagittis non vestibulum montes massa gravida
+                            tellus eu.
+                        </label>
+                    </div>
+                    <div class="form-check p-3 mb-2 shipping-option">
+                        <input class="form-check-input" type="radio" name="shippingMethod" id="ship2">
+                        <label class="form-check-label text-muted small" for="ship2">
+                            Lorem ipsum netus posuere nulla gravida sem sagittis non vestibulum montes massa gravida
+                            tellus eu.
+                        </label>
+                    </div>
+                    <div
+                        class="form-check p-3 d-flex justify-content-between align-items-center shipping-option active">
+                        <div>
+                            <input class="form-check-input me-2" type="radio" name="shippingMethod" id="ship3" checked>
+                            <label class="form-check-label text-muted small" for="ship3">
+                                Lorem ipsum netus posuere nulla gravida sem sagittis non vestibulum montes massa gravida
+                                tellus eu.
+                            </label>
+                        </div>
+                        <span class="fw-bold text-nowrap ms-2">$ 2.990</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COLUMNA DERECHA -->
+            <aside class="col-lg-5">
+                <!-- Bloque Producto -->
+                <div class="d-flex align-items-center justify-content-between mb-4 pb-3 border-bottom">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="../img/lentes.jpg" class="img-fluid rounded-3 checkout-thumb" alt="Miniatura">
+                        <h4 class="fs-6 fw-bold mb-0">Modelo CX2535</h4>
+                    </div>
+                    <span class="text-secondary small">$ 29.990</span>
+                </div>
+
+                <!-- Desglose precios -->
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Sub total</span>
+                        <span class="fw-medium" id="subtotal">$29.990</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                        <span class="text-secondary">Impuestos</span>
+                        <span class="fw-medium" id="impuestos">$0</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-secondary">Envío</span>
+                        <span class="fw-medium" id="envio">$2.990</span>
+                    </div>
+
+                    <!-- descuento -->
+                    <div class="d-flex gap-2 align-items-center">
+                        <span class="text-secondary text-nowrap">Descuento</span>
+                        <input type="text" class="form-control coupon-input flex-grow-1">
+                        <button class="btn btn-apply-coupon">Aplicar</button>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center border-top border-dark pt-3 mb-5">
+                    <span class="fw-bold fs-5">Total</span>
+                    <span class="fw-bold fs-5" id="total">$0</span>
+                </div>
+
+                <!-- Pasarela de Pago -->
+                <h2 class="fw-bold mb-3 fs-3">Pago</h2>
+                <div class="payment-box p-4 mb-4">
+                    <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                        <div>
+                            <input class="form-check-input me-2" type="radio" name="paymentType" id="payDebit" checked>
+                            <label class="form-check-label fw-bold" for="payDebit">Tarjeta de débito</label>
+                        </div>
+                        <i class="bi bi-credit-card-2-back fs-5"></i>
+                    </div>
+
+                    <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                        <div>
+                            <input class="form-check-input me-2" type="radio" name="paymentType" id="payCredit">
+                            <label class="form-check-label fw-bold" for="payCredit">Tarjeta de crédito</label>
+                        </div>
+                        <i class="bi bi-credit-card-fill fs-5"></i>
+                    </div>
+
+                    <!-- Campos de la tarjeta de crédito -->
+                    <div class="credit-card-subform mt-3 pt-2">
+                        <div class="mb-2">
+                            <input type="text" class="form-control" placeholder="Nombre del titular">
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" class="form-control" placeholder="Número de Tarjeta">
+                        </div>
+                        <div class="row g-2 mb-2">
+                            <div class="col-6">
+                                <input type="text" class="form-control text-center" placeholder="MM/AA">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control text-center" placeholder="CVV">
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-2">
+                            <div class="col-5">
+                                <select class="form-select">
+                                    <option>RUT</option>
+                                </select>
+                            </div>
+                            <div class="col-7">
+                                <input type="text" class="form-control" placeholder="Número de documento">
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" class="form-control" placeholder="Cuotas">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón Pagar ahora -->
+                <button id="btnPagar" class="btn btn-pay-now w-100 py-3 mt-2 fs-5">Pagar ahora</button>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- CONTACTO -->
+
+                <div class="col-md-4">
+
+                    <h4>Contacto</h4>
+
+                    <p>Av. Providencia 1250, Santiago, Chile</p>
+
+                    <p>+56 2 2345 6789</p>
+
+                    <p>contacto@seenvision.cl</p>
+
+                    <br>
+
+                    <h4>Horario de Atención</h4>
+
+                    <p>Lun - Vie: 09:00 a 19:00</p>
+
+                    <p>Sáb: 10:00 a 14:00</p>
+
+                    <p>Domingo: Cerrado</p>
+
+                    <br>
+
+                    <h4>¿ Necesitas Ayuda ?</h4>
+
+                    <p>Preguntas Frecuentes</p>
+
+                </div>
+
+                <!-- NEWSLETTER -->
+
+                <div class="col-md-4 text-center">
+
+                    <h4>Newsletter</h4>
+
+                    <div class="newsletter-container">
+
+                        <label>E-Mail</label>
+
+                        <input type="email" class="form-control">
+
+                        <button class="btn btn-primary-custom">
+                            Aceptar
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- REDES -->
+
+                <div class="col-md-4">
+
+                    <h4>
+                        Síguenos en nuestras redes sociales
+                    </h4>
+
+                    <div class="social-links">
+
+
+                        <a href="#">
+                            <img src="../img/facebook.png" alt="">
+                            <span>SeenVision</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/ig.png" alt="">
+                            <span>@SeenVision</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/tiktok.png" alt="">
+                            <span>@SeenVision</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/dom.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

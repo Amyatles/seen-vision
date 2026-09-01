@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seen Vision</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="../img/logo-seenvision.png" alt="Seen Vision">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.html">Ópticos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.html">Gafas de Sol</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./catalogo.html">Promociones</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contacto</a>
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <form class="d-flex">
+                        <input class="form-control form-control-sm" type="search" placeholder="Buscar"
+                            aria-label="Buscar">
+                    </form>
+
+                    <a class="nav-link d-flex align-items-center gap-1" href="#">
+                        <i class="bi bi-person-fill"></i>
+                        <span>Login/registrar</span>
+                    </a>
+
+                    <a class="nav-link" href="./checkout.html">
+                        <i class="bi bi-cart-fill"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header>
+        <img src="../img/promo.jpg" class="img-fluid w-100" alt="Banner catálogo">
+    </header>
+
+    <!-- Colecciones -->
+
+    <main class="catalog-container container my-5">
+
+        <section class="mb-5">
+            <h2 class="text-center catalog-section-title mb-4">Colecciones</h2>
+            <div class="row g-3 justify-content-center text-center">
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="collection-item">
+                        <div class="collection-circle" style="background-image: url('../img//hp.jpg');">
+                            <div class="collection-badge">Peliculas</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="collection-item">
+                        <div class="collection-circle" style="background-image: url('../img/verano.jpg');">
+                            <div class="collection-badge">Verano</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="collection-item">
+                        <div class="collection-circle" style="background-image: url('../img/felinos.jpg');">
+                            <div class="collection-badge">Rostro</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="collection-item">
+                        <div class="collection-circle" style="background-image: url('../img/felinos.jpg');">
+                            <div class="collection-badge">Felinos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="collection-item">
+                        <div class="collection-circle" style="background-image: url('../img/elegance.jpg');">
+                            <div class="collection-badge">Elegance</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-3 col-md-2">
+                    <div class="collection-item">
+                        <div class="collection-circle" style="background-image: url('../img/sale.jpg');">
+                            <div class="collection-badge">SALE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 text-center">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button class="btn btn-filter active">Mujer</button>
+                <button class="btn btn-filter">Hombre</button>
+                <button class="btn btn-filter">Unisex</button>
+                <button class="btn btn-filter">Niños</button>
+            </div>
+        </section>
+
+        <section class="product-grid-section">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado1">
+                                <label class="swatch-btn" for="morado1" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro1">
+                                <label class="swatch-btn" for="negro1" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo1">
+                                <label class="swatch-btn" for="amarillo1" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste1">
+                                <label class="swatch-btn" for="celeste1" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe1">
+                                <label class="swatch-btn" for="cafe1" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado2">
+                                <label class="swatch-btn" for="morado2" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro2">
+                                <label class="swatch-btn" for="negro2" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo2">
+                                <label class="swatch-btn" for="amarillo2" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste2">
+                                <label class="swatch-btn" for="celeste2" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe2">
+                                <label class="swatch-btn" for="cafe2" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado3">
+                                <label class="swatch-btn" for="morado3" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro3">
+                                <label class="swatch-btn" for="negro3" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo3">
+                                <label class="swatch-btn" for="amarillo3" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste3">
+                                <label class="swatch-btn" for="celeste3" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe3">
+                                <label class="swatch-btn" for="cafe3" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado4">
+                                <label class="swatch-btn" for="morado4" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro4">
+                                <label class="swatch-btn" for="negro4" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo4">
+                                <label class="swatch-btn" for="amarillo4" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste4">
+                                <label class="swatch-btn" for="celeste4" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe4">
+                                <label class="swatch-btn" for="cafe4" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado5">
+                                <label class="swatch-btn" for="morado5" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro5">
+                                <label class="swatch-btn" for="negro5" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo5">
+                                <label class="swatch-btn" for="amarillo5" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste5">
+                                <label class="swatch-btn" for="celeste5" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe5">
+                                <label class="swatch-btn" for="cafe5" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado6">
+                                <label class="swatch-btn" for="morado6" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro6">
+                                <label class="swatch-btn" for="negro6" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo6">
+                                <label class="swatch-btn" for="amarillo6" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste6">
+                                <label class="swatch-btn" for="celeste6" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe6">
+                                <label class="swatch-btn" for="cafe6" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado7">
+                                <label class="swatch-btn" for="morado7" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro7">
+                                <label class="swatch-btn" for="negro7" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo7">
+                                <label class="swatch-btn" for="amarillo7" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste7">
+                                <label class="swatch-btn" for="celeste7" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe7">
+                                <label class="swatch-btn" for="cafe7" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado8">
+                                <label class="swatch-btn" for="morado8" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro8">
+                                <label class="swatch-btn" for="negro8" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo8">
+                                <label class="swatch-btn" for="amarillo8" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste8">
+                                <label class="swatch-btn" for="celeste8" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe8">
+                                <label class="swatch-btn" for="cafe8" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color1" id="morado9">
+                                <label class="swatch-btn" for="morado9" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="negro9">
+                                <label class="swatch-btn" for="negro9" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color1" id="amarillo9">
+                                <label class="swatch-btn" for="amarillo9" style="background-color:#FFC312;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="celeste9">
+                                <label class="swatch-btn" for="celeste9" style="background-color:#74CCB9;"></label>
+                                <input type="radio" class="btn-check" name="color1" id="cafe9">
+                                <label class="swatch-btn" for="cafe9" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color10" id="morado10">
+                                <label class="swatch-btn" for="morado10" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color10" id="negro10">
+                                <label class="swatch-btn" for="negro10" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color10" id="amarillo10">
+                                <label class="swatch-btn" for="amarillo10" style="background-color:#FFC312;"></label>
+
+                                <input type="radio" class="btn-check" name="color10" id="celeste10">
+                                <label class="swatch-btn" for="celeste10" style="background-color:#74CCB9;"></label>
+
+                                <input type="radio" class="btn-check" name="color10" id="cafe10">
+                                <label class="swatch-btn" for="cafe10" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color11" id="morado11">
+                                <label class="swatch-btn" for="morado11" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color11" id="negro11">
+                                <label class="swatch-btn" for="negro11" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color11" id="amarillo11">
+                                <label class="swatch-btn" for="amarillo11" style="background-color:#FFC312;"></label>
+
+                                <input type="radio" class="btn-check" name="color11" id="celeste11">
+                                <label class="swatch-btn" for="celeste11" style="background-color:#74CCB9;"></label>
+
+                                <input type="radio" class="btn-check" name="color11" id="cafe11">
+                                <label class="swatch-btn" for="cafe11" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col">
+                    <article class="product-card">
+                        <a href="producto.html">
+                            <div class="product-img-wrapper">
+                                <img src="../img/lentes.jpg" class="img-fluid product-img" alt="Modelo CX2535">
+                            </div>
+                        </a>
+                        <div class="product-info-box">
+                            <h3 class="product-title"><a href="producto.html"
+                                    class="text-decoration-none text-dark">Modelo CX2535</a></h3>
+                            <div class="color-swatches">
+
+                                <input type="radio" class="btn-check" name="color12" id="morado12">
+                                <label class="swatch-btn" for="morado12" style="background-color:#E056FD;"></label>
+
+                                <input type="radio" class="btn-check" name="color12" id="negro12">
+                                <label class="swatch-btn" for="negro12" style="background-color:#000000;"></label>
+
+                                <input type="radio" class="btn-check" name="color12" id="amarillo12">
+                                <label class="swatch-btn" for="amarillo12" style="background-color:#FFC312;"></label>
+
+                                <input type="radio" class="btn-check" name="color12" id="celeste12">
+                                <label class="swatch-btn" for="celeste12" style="background-color:#74CCB9;"></label>
+
+                                <input type="radio" class="btn-check" name="color12" id="cafe12">
+                                <label class="swatch-btn" for="cafe12" style="background-color:#8B5A2B;"></label>
+
+                            </div>
+                            <div class="product-card-footer">
+                                <span class="product-price">$29.990</span>
+                                <a href="./checkout.html" class="btn btn-add-to-cart">
+                                    Agregar
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- CONTACTO -->
+
+                <div class="col-md-4">
+
+                    <h4>Contacto</h4>
+
+                    <p>Av. Providencia 1250, Santiago, Chile</p>
+
+                    <p>+56 2 2345 6789</p>
+
+                    <p>contacto@seenvision.cl</p>
+
+                    <br>
+
+                    <h4>Horario de Atención</h4>
+
+                    <p>Lun - Vie: 09:00 a 19:00</p>
+
+                    <p>Sáb: 10:00 a 14:00</p>
+
+                    <p>Domingo: Cerrado</p>
+
+                    <br>
+
+                    <h4>¿ Necesitas Ayuda ?</h4>
+
+                    <p>Preguntas Frecuentes</p>
+
+                </div>
+
+                <!-- NEWSLETTER -->
+
+                <div class="col-md-4 text-center">
+
+                    <h4>Newsletter</h4>
+
+                    <div class="newsletter-container">
+
+                        <label>E-Mail</label>
+
+                        <input type="email" class="form-control">
+
+                        <button class="btn btn-primary-custom">
+                            Aceptar
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- REDES -->
+
+                <div class="col-md-4">
+
+                    <h4>
+                        Síguenos en nuestras redes sociales
+                    </h4>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            <img src="../img/facebook.png" alt="">
+                            <span>SeenVision</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/ig.png" alt="">
+                            <span>@SeenVision</span>
+                        </a>
+
+                        <a href="#">
+                            <img src="../img/tiktok.png" alt="">
+                            <span>@SeenVision</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
